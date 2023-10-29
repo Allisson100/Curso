@@ -1,8 +1,8 @@
 # Utilizando rotas aninhadas
 
-Aprendemos o conceito de roras aninhadas.
+Aprendemos o conceito de rotas aninhadas.
 
-Nosso arquivo toutes.js ficou assim:
+Nosso arquivo routes.js ficou assim:
 
     import { BrowserRouter, Route, Routes } from 'react-router-dom'
     import Inicio from './paginas/Inicio'
@@ -12,23 +12,23 @@ Nosso arquivo toutes.js ficou assim:
     import PaginaPadrao from 'components/PaginaPadrao';
 
     function AppRoutes() {
-    return (
-        <BrowserRouter>
+        return (
+            <BrowserRouter>
 
-        <Menu />
+            <Menu />
 
-        <Routes>
-            <Route path='/' element={<PaginaPadrao />}>
-                <Route path='/' element={<Inicio />}/>
-                <Route path='/sobremim' element={<SobreMim />}/>
-            </Route>
+            <Routes>
+                <Route path='/' element={<PaginaPadrao />}>
+                    <Route path='/' element={<Inicio />}/>
+                    <Route path='/sobremim' element={<SobreMim />}/>
+                </Route>
 
-            <Route path='*' element={<h1>ERROOOO</h1>}/>
-        </Routes>
+                <Route path='*' element={<h1>ERROOOO</h1>}/>
+            </Routes>
 
-        <Rodape />
-        </BrowserRouter>
-    );
+            <Rodape />
+            </BrowserRouter>
+        );
     }
 
     export default AppRoutes;
@@ -40,7 +40,7 @@ Criamos essa rota aninhada:
         <Route path='/sobremim' element={<SobreMim />}/>
     </Route>
 
-Basicamente conseguimos criar um layout padrõ para ambas as rotas, porém com conteúdos diferentes entre elas. Nosso arquivo da PaginaPadrao está assim:
+Basicamente conseguimos criar um layout padraõ para ambas as rotas, porém com conteúdos diferentes entre elas. Nosso arquivo da PaginaPadrao está assim:
 
     import Banner from "components/Banner";
     import { Outlet } from "react-router-dom";
@@ -55,7 +55,7 @@ Basicamente conseguimos criar um layout padrõ para ambas as rotas, porém com c
         )
     }
 
-A taga <Outlet /> serve justamente para renderizar os conteúdos específicos de cada tag.
+A tag <Outlet /> serve justamente para renderizar os conteúdos específicos de cada tag.
 
 O arquivo index do Inicio está assim:
 

@@ -12,7 +12,7 @@ O arquivo post está assim por enquanto:
         console.log(parametros);
 
         return (
-            <h1>POsts {parametros.id}</h1>
+            <h1>Posts {parametros.id}</h1>
         )
     }
 
