@@ -115,7 +115,7 @@ Quando deletamos pdemos armazenar um valor booleano para sabermos caso quisermos
     ]
 
     clientes.ederecos.push({
-        rua: "qualuqer endreço aqui",
+        rua: "qualquer endreço aqui",
         numero: 5897,
         apartamento: false,
     })
@@ -179,11 +179,11 @@ Com esse metodo no for pordemos fazer um forEach porém em um objeto:
     }
 
     for (let campo in cliente) {
-        console.log(chave) // Retorna os nomes de cada propriedade
+        console.log(campo) // Retorna os nomes de cada propriedade
     }
 
     for (let campo in cliente) {
-        console.log(cliente[chave]) // Retorna os valores de cada propriedade
+        console.log(cliente[campo]) // Retorna os valores de cada propriedade
     }
 
 # Métodos de objeto
@@ -196,7 +196,7 @@ Com esse metodo no for pordemos fazer um forEach porém em um objeto:
     }
 
     cliente.endereco = {
-        rua: "qualuqer endreço aqui",
+        rua: "qualquer endreço aqui",
         numero: 1124,
         apartamento: true,
         complemento: "ap 934",
@@ -239,7 +239,7 @@ Outro exemplo:
         ...cliente.endereco[0],
     }
 
-Dessa forma ele espealha o objeto que está dentro de enederecos, o que facilita s não reveriamos fzer o seguinte:
+Dessa forma ele espealha o objeto que está dentro de enderecos, o que facilita se não deveriamos fazer o seguinte:
 
     const encomenda = {
         destinatario: cliente.nome,

@@ -1,6 +1,6 @@
 # C A Linguagem de Programação que é uma mãe
 
-### Tipoas de dados em C
+### Tipos de dados em C
 
 Primitivo:
 
